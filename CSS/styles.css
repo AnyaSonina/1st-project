@@ -21,6 +21,14 @@ body {
   text-align: justify;
 }
 
+.body3,
+.body4 {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
   font-size: var(--h1_font_size);
   font-weight: var(--bold_font-weight);
@@ -157,7 +165,7 @@ nav {
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: white;
   width: auto;
   min-height: auto;
   margin: 0;
@@ -296,4 +304,21 @@ h1 {
 
 .bus {
   animation: bus_move 5s linear infinite normal;
+}
+
+form {
+  display: block;
+}
+
+.container_form {
+  width: 40%;
+  border-radius: 10px;
+  background-color: rgb(250, 219, 210);
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.standard-label {
+  padding: 20px;
 }
