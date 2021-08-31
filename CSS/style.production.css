@@ -28,6 +28,14 @@ body {
   text-align: justify;
 }
 
+.body3,
+.body4 {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
   font-size: var(--h1_font_size);
   font-weight: var(--bold_font-weight);
@@ -178,7 +186,7 @@ nav {
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: white;
   width: auto;
   min-height: auto;
   margin: 0;
