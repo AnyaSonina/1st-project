@@ -401,3 +401,21 @@ h1 {
   -webkit-animation: bus_move 5s linear infinite normal;
           animation: bus_move 5s linear infinite normal;
 }
+
+form {
+  display: block;
+}
+
+.container_form {
+  width: 40%;
+  border-radius: 10px;
+  background-color: rgb(250, 219, 210);
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.standard-label {
+  padding: 20px;
+}
+
