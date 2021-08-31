@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.production.css">
   </head>
 
-  <body>
+  <body class="body3">
     <header class="page-header">
       <img src="img/AnnaSonina-logos.jpeg" class="page-header__item" alt="Personal logo of Anna Sonina, a text logo in uppercase letters that consists of my name">
       <nav class="main-navigation page-header__item">
@@ -37,21 +37,23 @@
         <p><h1>Contact</h1>
       </div>
 
-      <div class="form">
+      <div class="container_form">
         <form action="" method="post" id="contactform">
+          <p>
           <label class="standard-label" for="contact-email">E-mail:</label>
           <input type="email" id="contact-email" required>
-          <br>
-          <br>      
+          </p>
+          <p>      
           <label class="standard-label" for="contact-telephone">Telephone:</label>
           <input type="tel" id="contact-telephone">
-          <br>
-          <br>      
+          </p>
+          <p>      
           <label class="standard-label" for="contact-message">Message:</label>
           <textarea maxlength="240" id="contact-message" required></textarea>
-          <br>
-          <br>      
+          </p>
+            
           <input type="submit" value="Send message">
+          
         </form>
       </div>
       <br>
