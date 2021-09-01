@@ -42,9 +42,10 @@ h1 {
 
 p.intro {
   text-align: justify;
-  margin: 20px;
+  margin: 10px;
   text-indent: 20px;
   line-height: 1.8em;
+  padding-right: 10px;
 }
 
 p {
@@ -53,6 +54,11 @@ p {
 
 p.ex {
   line-height: 0;
+}
+
+.homeh2 {
+  margin-right: 15px;
+  text-align: justify;
 }
 
 h2 {
@@ -293,9 +299,10 @@ form {
   grid-template-columns: 1fr 2fr;
   grid-gap: 16px;
   background: var(--form_background);
+  background-size: 3fr;
   padding: 2em;
   border: 1px double lightgray;
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
   border-radius: 5%;
 }
@@ -307,7 +314,7 @@ form {
 
 .standard-input {
   grid-column: 2 / 3;
-  width: 400px;
+  width: 350px;
 }
 
 .submit-input {
@@ -358,7 +365,23 @@ form {
   }
 
   h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
     font-size: 22px;
+  }
+
+  .profile_portrait {
+    float: none;
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
