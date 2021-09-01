@@ -342,7 +342,7 @@ form {
   }
 
   .about_pic {
-    width: 450px;
+    width: 400px;
     height: auto;
   }
 
@@ -357,17 +357,22 @@ form {
 
   form {
     max-width: 400px;
+    background-size: cover;
   }
 
   .standard-input {
-    grid-column: 2 / 3;
-    width: 300px;
+    grid-column: 2/3;
+    width: 200px;
   }
   
   .submit-input {
     grid-column: 2/3;
     width: 100px;
     margin-left: 1em;
+  }
+
+  .button {
+    margin: 0 auto;
   }
 }
 
@@ -445,4 +450,3 @@ form {
   }
 
 }
-
