@@ -36,7 +36,7 @@ h1 {
   text-align: center;
 }
 
-.exeption {
+.homeh1 {
   text-align: left;
 }
 
@@ -352,7 +352,6 @@ form {
     text-indent: 10px;
     line-height: 1.2em;
     padding-right: 10px;
-
   }
 
   form {
@@ -364,7 +363,7 @@ form {
     grid-column: 2/3;
     width: 200px;
   }
-  
+
   .submit-input {
     grid-column: 2/3;
     width: 100px;
@@ -373,6 +372,19 @@ form {
 
   .button {
     margin: 0 auto;
+  }
+
+  .profile {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .homeh1,
+  .homeh2,
+  .homeh3 {
+    text-align: center;
   }
 }
 
@@ -399,7 +411,7 @@ form {
     grid-column: 2 / 3;
     width: 300px;
   }
-  
+
   .submit-input {
     grid-column: 2/3;
     width: 150px;
@@ -430,11 +442,11 @@ form {
   }
 
   .profile_portrait {
+    display: block;
+    margin: 0 auto;
     float: none;
     width: 150px;
     height: auto;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .button {
@@ -447,6 +459,12 @@ form {
     text-indent: 15px;
     line-height: 1.2em;
     padding-right: 10px;
+  }
+
+  .homeh1,
+  .homeh2,
+  .homeh3 {
+    text-align: center;
   }
 
 }
