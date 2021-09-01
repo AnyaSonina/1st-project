@@ -299,7 +299,7 @@ form {
   grid-template-columns: 1fr 2fr;
   grid-gap: 16px;
   background: var(--form_background);
-  background-size: 3fr;
+  background-size: cover;
   padding: 2em;
   border: 1px double lightgray;
   max-width: 550px;
@@ -341,6 +341,34 @@ form {
     background-image: none;
   }
 
+  .about_pic {
+    width: 450px;
+    height: auto;
+  }
+
+  .intro {
+    text-align: justify;
+    margin: 5px;
+    text-indent: 10px;
+    line-height: 1.2em;
+    padding-right: 10px;
+
+  }
+
+  form {
+    max-width: 400px;
+  }
+
+  .standard-input {
+    grid-column: 2 / 3;
+    width: 300px;
+  }
+  
+  .submit-input {
+    grid-column: 2/3;
+    width: 100px;
+    margin-left: 1em;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 750px) {
@@ -351,6 +379,26 @@ form {
   .body3,
   .body4 {
     background-image: none;
+  }
+
+  .about_pic {
+    width: 500px;
+    height: auto;
+  }
+
+  form {
+    max-width: 600px;
+  }
+
+  .standard-input {
+    grid-column: 2 / 3;
+    width: 300px;
+  }
+  
+  .submit-input {
+    grid-column: 2/3;
+    width: 150px;
+    margin-left: 1em;
   }
 }
 
@@ -383,5 +431,18 @@ form {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .button {
+    margin: 0 9em;
+  }
+
+  .intro {
+    text-align: justify;
+    margin: 10px;
+    text-indent: 15px;
+    line-height: 1.2em;
+    padding-right: 10px;
+  }
+
 }
 
