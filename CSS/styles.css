@@ -13,8 +13,13 @@
   --form_background: salmon;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
   background-color: var(--primary-color);
+  background: linear-gradient(to bottom, #FFEED4 0%, #FFB1D7 41%, #E97F8E 100%);
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 400;
   font-size: large;
@@ -22,12 +27,9 @@ body {
   text-align: justify;
 }
 
-.body3,
-.body4 {
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+hr {
+  border: 4px solid var(--form_background);
+  border-radius: 10px;
 }
 
 h1 {
@@ -336,11 +338,6 @@ form {
     grid-template-columns: 1fr;
   }
 
-  .body3,
-  .body4 {
-    background-image: none;
-  }
-
   .about_pic {
     width: 400px;
     height: auto;
@@ -391,11 +388,6 @@ form {
 @media (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .body3,
-  .body4 {
-    background-image: none;
   }
 
   .about_pic {
