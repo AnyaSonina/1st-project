@@ -5,6 +5,10 @@
 * Browsers: last 2 version
 */
 
+html {
+  min-height: 100%;
+}
+
 body {
   background-color: #ffeed4;
   font-family: 'Merriweather Sans', sans-serif;
@@ -12,14 +16,6 @@ body {
   font-size: large;
   line-height: normal;
   text-align: justify;
-}
-
-.body3,
-.body4 {
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 h1 {
@@ -114,6 +110,7 @@ a:active {
 .profile {
   max-width: 750px;
   margin: 0 auto;
+  text-align: center;
 }
 
 nav {
@@ -219,7 +216,9 @@ section {
           transition-duration: 0.9s;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-  margin-left: 15em;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 button {
@@ -236,7 +235,9 @@ button {
           transition-duration: 0.9s;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-  margin-left: 15em;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 button:hover,
@@ -246,6 +247,10 @@ button:focus,
   cursor: -webkit-grab;
   cursor: grab;
   opacity: 0.8;
+}
+
+.about {
+  text-align: center;
 }
 
 h1 {
@@ -444,11 +449,6 @@ form {
     grid-template-columns: 1fr;
   }
 
-  .body3,
-  .body4 {
-    background-image: none;
-  }
-
   .about_pic {
     width: 400px;
     height: auto;
@@ -482,10 +482,6 @@ form {
     margin-left: 1em;
   }
 
-  .button {
-    margin: 0 auto;
-  }
-
   .profile {
     display: block;
     text-align: center;
@@ -504,11 +500,6 @@ form {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .body3,
-  .body4 {
-    background-image: none;
   }
 
   .about_pic {
@@ -566,10 +557,6 @@ form {
     height: auto;
   }
 
-  .button {
-    margin: 0 9em;
-  }
-
   .intro {
     text-align: justify;
     margin: 10px;
@@ -583,4 +570,5 @@ form {
   .homeh3 {
     text-align: center;
   }
+
 }

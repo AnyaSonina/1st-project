@@ -19,17 +19,11 @@ html {
 
 body {
   background-color: var(--primary-color);
-  background: linear-gradient(to bottom, #FFEED4 0%, #FFB1D7 41%, #E97F8E 100%);
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 400;
   font-size: large;
   line-height: normal;
   text-align: justify;
-}
-
-hr {
-  border: 4px solid var(--form_background);
-  border-radius: 10px;
 }
 
 h1 {
@@ -119,6 +113,7 @@ a:active {
 .profile {
   max-width: 750px;
   margin: 0 auto;
+  text-align: center;
 }
 
 nav {
@@ -211,7 +206,9 @@ button {
   border-bottom: 2px solid var(--border-bottom-color);
   transition-duration: 0.9s;
   transition-property: opacity;
-  margin-left: 15em;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 button:hover,
@@ -220,6 +217,10 @@ button:focus,
 .button:focus {
   cursor: grab;
   opacity: 0.8;
+}
+
+.about {
+  text-align: center;
 }
 
 h1 {
@@ -367,10 +368,6 @@ form {
     margin-left: 1em;
   }
 
-  .button {
-    margin: 0 auto;
-  }
-
   .profile {
     display: block;
     text-align: center;
@@ -439,10 +436,6 @@ form {
     float: none;
     width: 150px;
     height: auto;
-  }
-
-  .button {
-    margin: 0 9em;
   }
 
   .intro {
