@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
 * Autoprefixer: v10.3.1
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 html {
@@ -11,7 +11,7 @@ html {
 
 body {
   background-color: #ffeed4;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-weight: 400;
   font-size: large;
   line-height: normal;
@@ -98,8 +98,8 @@ a:active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .clear {
@@ -125,7 +125,7 @@ nav {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-header {
@@ -138,14 +138,14 @@ nav {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -156,6 +156,62 @@ nav {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.navigation-list {
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
+.navigation-list a {
+  color: rgb(197, 52, 52);
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.animation a:before {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: "";
+  background: salmon;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.animation a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: "";
+  background: salmon;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.animation a:before {
+  left: 0px;
+  top: 0px;
+}
+
+.animation a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.animation a:hover:before,
+.animation a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
 }
 
 section {
@@ -213,8 +269,10 @@ section {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.9s;
-          transition-duration: 0.9s;
+  -o-transition-duration: 0.9s;
+  transition-duration: 0.9s;
   -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
   text-align: center;
   margin-left: 25%;
@@ -232,8 +290,10 @@ button {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.9s;
-          transition-duration: 0.9s;
+  -o-transition-duration: 0.9s;
+  transition-duration: 0.9s;
   -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
   text-align: center;
   margin-left: 25%;
@@ -279,123 +339,123 @@ h1 {
 
 .circle {
   -webkit-animation: colour-change 2s linear infinite alternate;
-          animation: colour-change 2s linear infinite alternate;
+  animation: colour-change 2s linear infinite alternate;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(-200px, 50px);
-            transform: translate(-200px, 50px);
+    transform: translate(-200px, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(-200px, 50px);
-            transform: translate(-200px, 50px);
+    transform: translate(-200px, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud {
   -webkit-animation: cloud-move 15s linear infinite alternate;
-          animation: cloud-move 15s linear infinite alternate;
+  animation: cloud-move 15s linear infinite alternate;
 }
 
 @-webkit-keyframes balloon_move {
   from {
     -webkit-transform: translate(-80px, 50px);
-            transform: translate(-80px, 50px);
+    transform: translate(-80px, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes balloon_move {
   from {
     -webkit-transform: translate(-80px, 50px);
-            transform: translate(-80px, 50px);
+    transform: translate(-80px, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .balloon {
   -webkit-animation: balloon_move 15s linear infinite alternate;
-          animation: balloon_move 15s linear infinite alternate;
+  animation: balloon_move 15s linear infinite alternate;
 }
 
 @-webkit-keyframes baloon_move {
   from {
     -webkit-transform: translate(-75px, 50px);
-            transform: translate(-75px, 50px);
+    transform: translate(-75px, 50px);
   }
 
   to {
     -webkit-transform: translate(45px, 50px);
-            transform: translate(45px, 50px);
+    transform: translate(45px, 50px);
   }
 }
 
 @keyframes baloon_move {
   from {
     -webkit-transform: translate(-75px, 50px);
-            transform: translate(-75px, 50px);
+    transform: translate(-75px, 50px);
   }
 
   to {
     -webkit-transform: translate(45px, 50px);
-            transform: translate(45px, 50px);
+    transform: translate(45px, 50px);
   }
 }
 
 .baloon_2 {
   -webkit-animation: baloon_move 15s linear infinite alternate;
-          animation: baloon_move 15s linear infinite alternate;
+  animation: baloon_move 15s linear infinite alternate;
 }
 
 @-webkit-keyframes bus_move {
   from {
     -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
+    transform: translate(50px, 0);
   }
 
   to {
     -webkit-transform: translate(-800px, 0);
-            transform: translate(-800px, 0);
+    transform: translate(-800px, 0);
   }
 }
 
 @keyframes bus_move {
   from {
     -webkit-transform: translate(50px, 0);
-            transform: translate(50px, 0);
+    transform: translate(50px, 0);
   }
 
   to {
     -webkit-transform: translate(-800px, 0);
-            transform: translate(-800px, 0);
+    transform: translate(-800px, 0);
   }
 }
 
 .bus {
   -webkit-animation: bus_move 5s linear infinite normal;
-          animation: bus_move 5s linear infinite normal;
+  animation: bus_move 5s linear infinite normal;
 }
 
 form {
@@ -570,5 +630,4 @@ form {
   .homeh3 {
     text-align: center;
   }
-
 }
