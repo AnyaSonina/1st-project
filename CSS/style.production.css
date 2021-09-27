@@ -61,6 +61,10 @@ h3 {
   font-variant: small-caps;
 }
 
+span {
+  color: mediumvioletred;
+}
+
 a {
   color: rgb(177, 66, 103);
 }

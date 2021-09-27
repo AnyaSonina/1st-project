@@ -44,6 +44,10 @@ p.intro {
   padding-right: 10px;
 }
 
+video {
+  width: 400px;
+}
+
 p {
   line-height: 1.6em;
 }
@@ -67,6 +71,10 @@ h3 {
   font-size: small;
   font-weight: var(--bold_font-weight);
   font-variant: small-caps;
+}
+
+span {
+  color: mediumvioletred;
 }
 
 a {
